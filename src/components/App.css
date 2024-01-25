@@ -1,0 +1,180 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.character-list{
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(auto-fill, 20%);
+    align-content: flex-start;
+    grid-row-gap: 5%;
+}
+
+.character-list-entry{
+    text-decoration: none;
+    background-color: gold;
+    color: darkblue;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5em;
+    margin: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition-duration: 0.5s;
+}
+
+.character-list-entry:hover{
+    background-color: rgb(254, 236, 134);
+    color: rgb(0, 0, 80);
+}
+
+.button-episode{
+    position: absolute;
+    float: left;
+    margin-left: 5rem;
+}
+
+.button{
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    position: relative;
+    justify-self: center;
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+    transition-duration: 0.5s;
+}
+
+.button:hover{
+    background-color: rgb(84, 84, 255)
+}
+
+.episode-list{
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.navbar{
+    text-align: center;
+    background-color: red;
+}
+
+.character-img{
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+    margin: 2%;
+    border-radius: 1rem;
+}
+
+.logo-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+}
+
+.image-container{
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+}
+
+ol > li::marker {
+    font-weight: bold;
+}
+
+ul{
+    columns: 3;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card{
+    border-radius: 1rem;
+    border-style: solid;
+}
+
+.error-card{
+    flex-basis: 50%;
+}
+
+.character-card{
+    flex-basis: 50%;
+    justify-content: space-around;
+    background-color: darkorange;
+}
+
+.season-card{
+    flex-basis: 30%;
+}
+
+@media all and (max-width:1200px){
+    .season-card{
+        flex-basis: 40%;
+    }
+
+    .character-list{
+        grid-template-columns: repeat(auto-fill, 25%);
+    }
+}
+
+
+@media all and (max-width:900px){
+    .button-episode{
+        float: none;
+        position: static;
+    }
+
+    .season-card{
+        flex-basis: 100%;
+    }
+
+    .character-list{
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+}
+
+.card-title{
+    margin: 0px;
+    border-radius: 0.8rem;
+    border: solid transparent;
+}
+
+.character-title{
+    background-color: crimson;
+    color: black;
+}
+
+.season-title{
+    background-color: greenyellow;
+    color: black;
+}
+
+.error-title{
+    background-color: lightgray;
+    color: black;
+}
